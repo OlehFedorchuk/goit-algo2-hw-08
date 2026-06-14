@@ -3,7 +3,6 @@ from typing import Dict
 import time
 from collections import deque
 
-
 class SlidingWindowRateLimiter:
     def __init__(self, window_size: int = 10, max_requests: int = 1):
         self.window_size = window_size
@@ -80,7 +79,6 @@ class SlidingWindowRateLimiter:
         Повертає час очікування в секундах,
         поки користувач зможе відправити наступне повідомлення.
         """
-
         current_time = time.time()
 
         # Очищаємо старі повідомлення

@@ -11,7 +11,6 @@ class LRUCache:
     def get(self, key):
         if key not in self.cache:
             return -1
-
         # Переносимо ключ у кінець, бо він щойно був використаний
         self.cache.move_to_end(key)
         return self.cache[key]
